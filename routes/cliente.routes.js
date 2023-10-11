@@ -122,7 +122,7 @@ router.put('/:id', clienteController.updateCliente);
  *         schema:
  *           type: string
  *         required: true
- *         description: ID del periodo
+ *         description: ID del cliente
  *     responses:
  *       200:
  *         description: OK
