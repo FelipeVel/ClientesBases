@@ -23,14 +23,14 @@ router.get('/', clienteController.getClientes);
 
 /**
  * @openapi
- * /clientes/{noDocumento}:
+ * /clientes/{numDocumento}:
  *   get:
  *     tags:
  *       - Clientes
  *     summary: Obtener un cliente por su ID
  *     parameters:
  *       - in: path
- *         name: noDocumento
+ *         name: numDocumento
  *         schema:
  *           type: string
  *           required: true
@@ -43,7 +43,7 @@ router.get('/', clienteController.getClientes);
  *             schema:
  *               $ref: '#/components/schemas/Cliente'
  */
-router.get('/:id', clienteController.getClienteById);
+router.get('/:numDocumento', clienteController.getClienteById);
 
 /**
  * @openapi
@@ -73,7 +73,7 @@ router.post('/', clienteController.createCliente);
 
 /**
  * @openapi
- * /clientes/{noDocumento}:
+ * /clientes/{numDocumento}:
  *   put:
  *     tags:
  *       - Clientes
@@ -81,7 +81,7 @@ router.post('/', clienteController.createCliente);
  *     description: Actualizar un cliente
  *     parameters:
  *       - in: path
- *         name: noDocumento
+ *         name: numDocumento
  *         schema:
  *           type: string
  *         required: true
@@ -106,11 +106,11 @@ router.post('/', clienteController.createCliente);
  *       500:
  *         description: Internal Server Error
  */
-router.put('/:id', clienteController.updateCliente);
+router.put('/:numDocumento', clienteController.updateCliente);
 
 /**
  * @openapi
- * /clientes/{noDocumento}:
+ * /clientes/{numDocumento}:
  *   delete:
  *     tags:
  *       - Clientes
@@ -118,7 +118,7 @@ router.put('/:id', clienteController.updateCliente);
  *     description: Eliminar un cliente
  *     parameters:
  *       - in: path
- *         name: noDocumento
+ *         name: numDocumento
  *         schema:
  *           type: string
  *         required: true
@@ -137,6 +137,6 @@ router.put('/:id', clienteController.updateCliente);
  *       500:
  *         description: Internal Server Error
  */
-router.delete('/:id', clienteController.deleteCliente);
+router.delete('/:numDocumento', clienteController.deleteCliente);
 
 module.exports = router;
