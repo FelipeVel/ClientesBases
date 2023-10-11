@@ -12,7 +12,7 @@ const swaggerOptions = {
         Cliente: {
           type: 'object',
           properties: {
-            nodocumento: {
+            numDocumento: {
               type: 'string',
               example: '1',
             },
@@ -35,6 +35,10 @@ const swaggerOptions = {
             correo: {
               type: 'string',
               example: 'ejemplo@gmail.com',
+            },
+            idTipoDoc: {
+              type: 'number',
+              example: 1,
             },
           },
         },
