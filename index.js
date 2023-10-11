@@ -18,6 +18,7 @@ app.use(express.static('static'));
 // Rutas
 
 app.use('/clientes', require('./routes/cliente.routes'));
+app.use('/tipos-doc', require('./routes/tipoDoc.routes'));
 
 app.listen(puerto, (err) => {
   if (err) {

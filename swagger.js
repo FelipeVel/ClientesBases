@@ -38,6 +38,19 @@ const swaggerOptions = {
             },
           },
         },
+        TipoDoc: {
+          type: 'object',
+          properties: {
+            idtipodoc: {
+              type: 'string',
+              example: '1',
+            },
+            desctipodoc: {
+              type: 'string',
+              example: 'Cedula',
+            },
+          },
+        },
       },
     },
   },
