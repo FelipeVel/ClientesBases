@@ -19,14 +19,14 @@ const clienteController = require('../controllers/cliente.controller');
  *               items:
  *                $ref: '#/components/schemas/Cliente'
  */
-router.get('/', clienteController.getCliente);
+router.get('/', clienteController.getClientes);
 
 /**
  * @openapi
  * /clientes/{noDocumento}:
  *   get:
  *     tags:
- *       - Cientes
+ *       - Clientes
  *     summary: Obtener un cliente por su ID
  *     parameters:
  *       - in: path

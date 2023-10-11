@@ -1,7 +1,7 @@
 const utilities = require('../config/utilities');
 const controller = {};
 
-controller.getCliente = async (req, res) => {
+controller.getClientes = async (req, res) => {
   const query = `SELECT * FROM CLIENTE`;
   const result = await utilities.executeQuery(query);
   res.json(result);
@@ -41,3 +41,5 @@ controller.deleteCliente = async (req, res) => {
   const result = await utilities.executeQuery(query);
   res.json(result);
 };
+
+module.exports = controller;
