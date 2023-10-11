@@ -17,7 +17,7 @@ app.use(express.static('static'));
 
 // Rutas
 
-//app.use('/estudiantes', require('./routes/estudiante.routes'));
+app.use('/clientes', require('./routes/cliente.routes'));
 
 app.listen(puerto, (err) => {
   if (err) {
